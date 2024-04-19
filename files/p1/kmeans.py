@@ -3,8 +3,8 @@ import pprint
 from math import sqrt
 from random import randint, choices
 
-
 POINT = tuple[float, float, float]
+
 
 def distance(p1: POINT, p2: POINT) -> float:
     """distance _summary_
@@ -130,7 +130,6 @@ points = [
     (-7.65, 4.76, -6.71),
     (-1.11, -0.52, -5.27),
 ]
-
 
 k = int(input("K = "))
 centers = [(randint(-10, 10), randint(-10, 10), randint(-10, 10)) for _ in range(k)]
