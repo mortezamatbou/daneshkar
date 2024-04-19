@@ -133,6 +133,7 @@ points = [
 
 k = int(input("K = "))
 centers = [(randint(-10, 10), randint(-10, 10), randint(-10, 10)) for _ in range(k)]
+centers = [(1, 2, 3), (4, 5, 6)]
 while True:
     clusters = k_means(points, centers)
     new_centers = []
@@ -151,5 +152,4 @@ while True:
 
     centers = new_centers
 
-
-pprint.pprint(clusters)
+print(centers)
